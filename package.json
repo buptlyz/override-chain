@@ -1,6 +1,6 @@
 {
-  "name": "method-chain",
-  "version": "0.0.1-alpha2",
+  "name": "override-chain",
+  "version": "0.0.1-alpha3",
   "description": "override chain",
   "main": "dist/umd/index.js",
   "module": "dist/esm/index.js",
