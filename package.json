@@ -1,12 +1,13 @@
 {
   "name": "method-chain",
-  "version": "0.0.1-alpha1",
+  "version": "0.0.1-alpha2",
   "description": "override chain",
   "main": "dist/umd/index.js",
   "module": "dist/esm/index.js",
-  "type": "dist/index.d.ts",
+  "type": "index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "scripts": {
     "dev": "tsc -w",
@@ -14,7 +15,7 @@
     "build:common": "tsc --module commonjs --outDir dist/common",
     "build:esm": "tsc --module ESNext --outDir dist/esm",
     "build:umd": "tsc --module UMD --outDir dist/umd",
-    "build:d": "tsc -d --emitDeclarationOnly --outDir dist",
+    "build:d": "tsc -d --emitDeclarationOnly",
     "pub": "npm run build && npm publish"
   },
   "repository": {
