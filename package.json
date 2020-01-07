@@ -1,0 +1,31 @@
+{
+  "name": "method-chain",
+  "version": "0.0.1-alpha1",
+  "description": "override chain",
+  "main": "dist/umd/index.js",
+  "module": "dist/esm/index.js",
+  "type": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "rm -rf dist && npm run build:common && npm run build:esm && npm run build:umd && npm run build:d",
+    "build:common": "tsc --module commonjs --outDir dist/common",
+    "build:esm": "tsc --module ESNext --outDir dist/esm",
+    "build:umd": "tsc --module UMD --outDir dist/umd",
+    "build:d": "tsc -d --emitDeclarationOnly --outDir dist",
+    "pub": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buptlyz/override-chain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buptlyz/override-chain/issues"
+  },
+  "homepage": "https://github.com/buptlyz/override-chain#readme"
+}
